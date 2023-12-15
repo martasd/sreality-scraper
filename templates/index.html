@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flats for Sale</title>
+</head>
+<body>
+    <h1>Flats for Sale</h1>
+    <ul>
+        {% for flat in flats %}
+        <li>
+            <h2>{{ flat.title }}</h2>
+            <p>{{ flat.location }}</p>
+            <img src="{{ flat.image_url }}" alt="{{ flat.title }}">
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
