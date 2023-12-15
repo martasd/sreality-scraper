@@ -28,3 +28,7 @@ class Flat(db.Model):
 def index():
     flats = Flat.query.all()
     return render_template("index.html", flats=flats)
+
+
+if __name__ == "__main__":
+    app.run()
