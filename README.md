@@ -2,4 +2,11 @@
 
 ## Description
 
-Use scrapy framework to scrape the first 500 items (title, image url) from sreality.cz (flats, sell) and save it in the Postgresql database. Implement a simple HTTP server in python and show these 500 items on a simple page (title and image) and put everything to single docker compose command so that I can just run "docker-compose up" in the Github repository and see the scraped ads on http://127.0.0.1:8080 page.
+Fetches the title and image url of first 500 flats for sale from sreality.cz, saves it to Postgresql database and shows
+them on a simple page.
+
+## Usage
+
+1. Clone the repository and enter it
+2. Run `docker-compose up`.
+3. Navigate to http://localhost:8080 to display the page with flats for sale.
